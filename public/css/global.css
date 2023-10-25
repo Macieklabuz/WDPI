@@ -1,0 +1,80 @@
+body
+{
+    margin: 0;
+}
+
+nav
+{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav > ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main > .sidebar
+{
+    background-color:bisque;
+    width: calc(100vw / 3);
+    align-self:flex-start;
+}
+
+main > .elements
+{
+    background-color: cornsilk;
+    width: calc(100vw / 3 * 2);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog-container > img
+{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dog-container
+{
+    width: min-content;
+}
+
+.dog-container > img.paw-icon
+{
+    width: 30px;
+    object-fit: contain;
+    height: fit-content;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    transform: rotate(302deg);
+}
