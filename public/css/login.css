@@ -1,25 +1,97 @@
-body{
+body {
+    margin: 0;
+}
+
+.container {
     width: 100vw;
     height: 100vh;
+    background: #F5FBFF;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.login{
-    background-color: red;
-    width: 50vw;
-    height: 50vw;
-    border-radius: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.logo {
+    width: 50%;
+    text-align: center;
 }
 
-form{
+.login-container {
+    width: 50%;
+}
+
+form.login {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    background: #FFFFFFE0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 33px;
+}
+
+button {
+    background: transparent linear-gradient(180deg, #3D8EF3 0%, #2251B9 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 19px;
+    width: 50%;
+    border: none;
+    color: white;
+    margin: 1em;
+    line-height: 2.5em;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 1em;
+    margin: 1em;
+    width: 50%;
+}
+.top-bar {
+    caret-color: transparent;
+    height: 84px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #DBF0FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(2px);
+}
+
+.bottom-bar {
+    caret-color: transparent;
+    height: 84px; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #24A7FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+    }
+    * {
+        font-size: 36px;
+    }
+    .login-container,
+    .logo {
+        width: 100%;
+    }
+    form {
+        margin: auto;
+    }
+    img {
+        height: 7em;
+        margin: 2em;
+    }
 }
