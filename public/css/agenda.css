@@ -2,32 +2,58 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F5FBFF; /* Kolor w tle na środku */
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.calendar-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #F5FBFF; /* Kolor w tle na środku */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tabs {
-    display: flex;
-}
-
-.tabs a {
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 10px;
-    background-color: #eee;
+.calendar-header {
+    background-color: #DBF0FF; /* Kolor na gorze */
     color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.tabs a:hover {
-    background-color: #ddd;
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
 }
 
-.content {
-    margin-top: 20px;
+.day {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #F5FBFF; /* Kolor w tle na środku */
+}
+
+.tasks-panel {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #F5FBFF; /* Kolor w tle na środku */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dodatkowe style dla koloru na dole */
+.bottom-bar {
+    background-color: #24A7FF; /* Kolor na dole */
+    height: 5px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Dodatkowe style dla koloru na dole */
+.tasks-panel h2 {
+    color: #24A7FF; /* Kolor na dole */
 }
