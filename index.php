@@ -8,5 +8,6 @@ $path = parse_url( $path, PHP_URL_PATH);
 Routing::get('', 'DefaultController');
 Routing::get('login', 'DefaultController');
 Routing::get('dashboard', 'DefaultController');
+Routing::get('agenda', 'DefaultController');
 
 Routing::run($path);

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tabs a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    margin-top: 20px;
+}
