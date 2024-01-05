@@ -19,4 +19,14 @@ class DefaultController extends AppController {
         $this->render('agenda');
     }
 
+    public function tasks()
+    {
+        $this->render('tasks');
+    }
+
+    public function addTask()
+    {
+        $this->render('addTask');
+    }
+
 }

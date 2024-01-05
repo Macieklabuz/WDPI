@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F5FBFF;
+}
+
+.top-bar {
+    caret-color: transparent;
+    height: 104px; /* Zwiększone o 20px */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #DBF0FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bottom-bar {
+    caret-color: transparent;
+    height: 84px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #24A7FF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-btn:hover {
+    background: #007BFF;
+}
+
+
+/* Dodatkowe style dla formularza */
+h2 {
+    margin-bottom: 21px; /* Zwiększone o 20px */
+    font-size: 39px; /* Zwiększone o 20px */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 17px; /* Zwiększone o 20px */
+    font-size: 19px; /* Zwiększone o 20px */
+}
+
+input,
+textarea,
+input[type="date"] {
+    padding: 21px; /* Zwiększone o 20px */
+    margin-bottom: 21px; /* Zwiększone o 20px */
+    font-size: 19px; /* Zwiększone o 20px */
+}
+
+button[type="submit"] {
+    padding: 21px; /* Zwiększone o 20px */
+    background: #24A7FF;
+    color: #fff;
+    border: none;
+    border-radius: 19px; /* Zwiększone o 20px */
+    cursor: pointer;
+    font-size: 29px; /* Zwiększone o 20px */
+}
+
+button[type="submit"]:hover {
+    background: #007BFF;
+}
